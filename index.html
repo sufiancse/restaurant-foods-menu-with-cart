@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taxi-Burg</title>
+
+    <!-- daisyui and tailwind css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <h1 class="text-4xl font-bold text-center text-red-600">Restaurant Menu</h1>
+    <section
+      class="grid grid-cols-12 gap-3 w-11/12 mx-auto "
+    >
+      <!-- category section -->
+      <div class="col-span-2">
+        <h1>Category</h1>
+        <div class="divider"></div>
+        <div id="category-container" class="bg-gray-100 p-3 rounded-xl">
+
+        </div>
+      </div>
+
+      <!-- display all foods section -->
+      <div class="col-span-7">
+        <h1>All Foods</h1>
+        <div class="divider"></div>
+
+        <div id="card-container" class="grid grid-cols-1 gap-4">
+          <!-- sample card -->
+          
+        </div>
+      </div>
+
+      <div class="col-span-3 ">
+        <h1>Cart</h1>
+        <div class="divider"></div>
+        <div class="flex justify-between items-center bg-yellow-100 p-4 rounded-xl">
+            <div>
+                <img
+                src="https://www.themealdb.com/images/category/beef.png"
+                class="w-20"
+                alt=""
+              />
+              <h1>Food Name</h1>
+            </div>
+            <p>TK <span>540</span> x <span>1</span></p>
+        </div>
+        <div class="bg-slate-500 mt-5 p-3 rounded-xl font-bold text-lg flex justify-end text-white">
+            <h1>Total: <span>420</span> BDT</h1>
+        </div>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
